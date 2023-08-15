@@ -59,6 +59,6 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
 
 
     }else{
-        alert('Hey dude! Insert valid money to deposit. Do not dare to play with the boys!!')
+        alert('Hey dude! Insert valid money to withdraw. Do not dare to play with the boys!!')
     }
 })
