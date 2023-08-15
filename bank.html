@@ -13,37 +13,69 @@
         
             <div class="flex items-center justify-center gap-2">
                 <img class="w-64" src="images/logo.png" alt="the boys logo"> 
-                <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="text-6xl font font-normal text-white">BANK</h2>
+                <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="text-6xl font font-normal text-[#ffffffcf]">BANK</h2>
             </div>
         </header>
     </header>
 
     <!-- deposit withdraw and total balance section  -->
-    <section>
+    <section class="mt-12">
         <!-- display div  -->
-        <div>
+        <div class="flex justify-center items-center">
             <!-- current balance div  -->
-            <div>
-                
+            <div class="text-white bg-gradient-to-bl from-[#6a0505] to-[#ff6464] w-[375px] mx-auto px-12 py-12 space-y-4 rounded-lg ">
+                <h3 class="text-3xl mb-4 font-semibold">Current Balance</h3>
+                <h4 class="text-5xl">€ <span id="balance-total">2050</span></h4>
 
             </div>
 
-            <!-- deposit div  -->
-            <div>
+            <!-- Deposit div  -->
+            <div class="text-white bg-gradient-to-bl from-[#6a0505] to-[#ff6464] w-[375px] mx-auto px-12 py-12 space-y-4 rounded-lg">
+                <h3 class="text-3xl mb-4 font-semibold">Deposited So Far</h3>
+                <h4 class="text-5xl">€ <span id="deposit-total">00</span></h4>
 
             </div>
-
 
             <!-- withdraw div  -->
-            <div>
+            <div class="text-white bg-gradient-to-bl from-[#6a0505] to-[#ff6464] w-[375px] mx-auto px-12 py-12 space-y-4 rounded-lg">
+                <h3 class="text-3xl mb-4 font-semibold">Withdrawn So Far</h3>
+                <h4 class="text-5xl">€ <span id="withdraw-total">00</span></h4>
 
             </div>
+
+
+
+
 
         </div>
 
-        <!-- action div  -->
 
     </section>
+
+
+    <!-- action section  -->
+    <section class="mt-6">
+        <h3 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"  class="text-[#ffffffae] text-5xl text-center mb-4">What do you want to do?</h3>
+        
+        <div class="flex justify-center w-fit mx-auto gap-20 ">
+            <div class="text-white bg-gradient-to-bl from-[#6a0505] to-[#ff6464] w-[375px] mx-auto px-12 py-8 h-fit space-y-4 rounded-lg ">
+                <h3 class="text-3xl mb-4 font-semibold">Deposit</h3>
+                <input id="deposit-area" class="px-4 w-64 py-2 rounded-lg text-black focus:outline-none" type="text" placeholder="Amount you want to deposit">
+                <button id="deposit-btn" class="mt-2 bg-[#28ff2887] text-black font-bold px-3 py-2 rounded-lg">Deposit</button>
     
+            </div>
+
+            <div class="text-white bg-gradient-to-bl from-[#6a0505] to-[#ff6464] w-[375px] mx-auto px-12 py-8 h-fit space-y-4 rounded-lg ">
+                <h3 class="text-3xl mb-4 font-semibold">Withdraw</h3>
+                <input id="withdraw-area" class="text-black px-4 w-64 py-2 rounded-lg focus:outline-none" type="text" placeholder="Amount you want to withdraw">
+                <button id="withdraw-btn" class="mt-2 bg-[#ff000098] text-black font-bold px-3 py-2 rounded-lg">Withdraw</button>
+    
+            </div>
+
+        </div>
+    </section>
+    
+
+    <script src="js/calc.js"></script>
 </body>
 </html>
