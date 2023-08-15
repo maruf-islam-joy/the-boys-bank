@@ -11,7 +11,7 @@
     <header>
         <header class="mt-4 ">
         
-            <div class="flex items-center justify-center gap-2">
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-2">
                 <img class="w-64" src="images/logo.png" alt="the boys logo"> 
                 <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="text-6xl font font-normal text-[#ffffffcf]">BANK</h2>
             </div>
@@ -21,7 +21,7 @@
     <!-- deposit withdraw and total balance section  -->
     <section class="mt-12">
         <!-- display div  -->
-        <div class="flex justify-center items-center">
+        <div class="flex flex-col gap-8 lg:gap-0 lg:flex-row justify-center items-center">
             <!-- current balance div  -->
             <div class="text-white bg-gradient-to-bl from-[#6a0505] to-[#ff6464] w-[375px] mx-auto px-12 py-12 space-y-4 rounded-lg ">
                 <h3 class="text-3xl mb-4 font-semibold">Current Balance</h3>
@@ -54,10 +54,10 @@
 
 
     <!-- action section  -->
-    <section class="mt-6">
-        <h3 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"  class="text-[#ffffffae] text-5xl text-center mb-4">What do you want to do?</h3>
+    <section class="mt-20 lg:mt-6">
+        <h3 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"  class="text-[#ffffffae] text-4xl lg:text-5xl text-center mb-4">What do you want to do?</h3>
         
-        <div class="flex justify-center w-fit mx-auto gap-20 ">
+        <div class="flex flex-col lg:flex-row justify-center w-fit mx-auto gap-12 lg:gap-20 mt-12 ">
             <div class="text-white bg-gradient-to-bl from-[#6a0505] to-[#ff6464] w-[375px] mx-auto px-12 py-8 h-fit space-y-4 rounded-lg ">
                 <h3 class="text-3xl mb-4 font-semibold">Deposit</h3>
                 <input id="deposit-area" class="px-4 w-64 py-2 rounded-lg text-black focus:outline-none" type="text" placeholder="Amount you want to deposit">
@@ -75,6 +75,9 @@
         </div>
     </section>
     
+    <footer class="mt-20">
+        <h3 class="text-[#ffffff61] text-center ">This is a learning project by <br> Maruf Islam, 2023</h3>
+    </footer>
 
     <script src="js/calc.js"></script>
 </body>
